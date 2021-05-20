@@ -23,8 +23,8 @@ const questions = [
         message: 'Enter the team manager’s office number',
     },
     {
-        type: 'checkbox',
-        message: 'Please add an engineer or an intern or choose to finish building my team',
+        type: 'list',
+        message: 'Please add an engineer or an intern or choose to finish building the team',
         name: 'license',
         choices: ['Engineer', 'Intern', 'Finish up'],
     }
