@@ -33,48 +33,49 @@ const managerQuestions = [
 
 const engineerQuestions = [
     {
-      type: 'input',
-      name: 'engineerName',
-      message: 'What´s the employee´s name?',
+        type: 'input',
+        name: 'engineerName',
+        message: 'What is the engineer name?',
     },
     {
-      type: 'input',
-      name: 'engineerEmail',
-      message: 'What´s the employee´s email?',
+        type: 'input',
+        name: 'engineerEmail',
+        message: 'What is the engineer email?',
     },
     {
-      type: 'input',
-      name: 'engineerId',
-      message: 'What´s the employee´s ID?'
+        type: 'input',
+        name: 'engineerId',
+        message: 'What is the engineer ID?'
     },
     {
-    type: 'input',
-    name: 'gitHub',
-    message: 'What´s the engineer gitHub username?'
+        type: 'input',
+        name: 'gitHub',
+        message: 'What is the engineer gitHub username?'
     }
 ];
 
 const intenrQuestions = [
     {
-      type: 'input',
-      name: 'internName',
-      message: 'What´s the employee´s name?',
+        type: 'input',
+        name: 'internName',
+        message: 'Whats the employee name?',
     },
     {
-      type: 'input',
-      name: 'internEmail',
-      message: 'What´s the employee´s email?',
+        type: 'input',
+        name: 'internEmail',
+        message: 'Whats the employee email?',
     },
     {
-      type: 'input',
-      name: 'internId',
-      message: 'What´s the employee´s ID?'
+        type: 'input',
+        name: 'internId',
+        message: 'Whats the employee ID?'
     },
     {
-    type: 'input',
-    name: 'school',
-    message: 'What´s the intern school?'
-}]
+        type: 'input',
+        name: 'school',
+        message: 'Whats the intern school?'
+    }
+]
   
 const start = () => {
     const createManager = () => {
@@ -85,7 +86,7 @@ const start = () => {
                 {
                     type: 'list',
                     message: 'Please add an engineer or an intern or choose to finish building the team',
-                    name: 'employee',
+                    name: 'role',
                     choices: ['Engineer', 'Intern', 'Finish up'],
                 }
             ]).then(answers => {
