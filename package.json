@@ -7,7 +7,9 @@
     "init": "^0.1.2",
     "inquirer": "^8.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^24.8.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
