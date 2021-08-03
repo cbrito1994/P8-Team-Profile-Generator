@@ -8,10 +8,10 @@ const path = require('path')
 const teamMember = [];
 const arrayId = [];
 
-const outputDirectory = path.resolve(__dirname, "public")
-const outputPath = path.join(outputDirectory, "index.html");
+const outputFolder = path.resolve(__dirname, "dist")
+const outputPath = path.join(outputFolder, "index.html");
 
-const render = require("./template/htmlTemplate.js");
+const renderHtml = require("./src/htmlTemplate.js");
 
 const startApp = () => {
     const createManager = () => {
@@ -176,10 +176,10 @@ const startApp = () => {
     }
   
     const buildTeam = () => {
-      if (!fs.existsSync(outputDirectory)) {
-        fs.mkdirSync(outputDirectory)
-      }
-      fs.writeFileSync(outputPath, render(teamMember), "utf-8");
+        if (!fs.existsSync(outputFolder)) {
+            fs.mkdirSync(outputFolder)
+        }
+        fs.writeFileSync(outputPath, renderHtml(teamMember), "utf-8");
     }
     createManager();
 }
